@@ -59,7 +59,7 @@ button4.onclick = function () {
 
     var number = prompt("Enter number");
     var number = Number( number );
-    var tax = number * 14.975;
+    var tax = number * 14.975 / 100;
     var roundedTax = tax.toFixed( 2 );
 
     console.log( tax )
