@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chapter # 14</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="flexBox">
+
+        <div>
+            <h1>Simple</h1>
+            <form>
+                Name:
+                <input type="text">
+                <br> Email:
+                <input type="text">
+                <br> Date of birth:
+                <input type="text">
+                <br> Shipping Name:
+                <input type="text" name="shipping_name" id="shipping_name">
+                <br> Shipping Street:
+                <input type="text" name="shipping_street" id="shipping_street">
+                <br> Billing Name:
+                <input type="text" name="billing_name" id="billing_name">
+                <br> Billing Street:
+                <input type="text" name="billing_street" id="billing_street">
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div>
+            <h1>Styled</h1>
+            <form class="styled">
+                <fieldset>
+                    <legend>Personal Info:</legend>
+                    <div>
+                        <label>Name:</label>
+                        <input type="text">
+                    </div>
+
+                    <div>
+                        <label for="">Email:</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="">Date of Birth:</label>
+                        <input type="text">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Shipping Address:</legend>
+                    <div>
+                        <label for="shipping_name">Name:</label>
+                        <input type="text" name="shipping_name" id="shipping_name">
+                    </div>
+                    <div>
+                        <label for="shipping_street">Street:</label>
+                        <input type="text" name="shipping_street" id="shipping_street">
+                    </div>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Billing Address:</legend>
+                    <div>
+                        <label for="billing_name">Name:</label>
+                        <input type="text" name="billing_name" id="billing_name">
+                    </div>
+                    <div>
+                        <label for="billing_street">Street:</label>
+                        <input type="text" name="billing_street" id="billing_street">
+                    </div>
+                </fieldset>
+                <input type="submit" value="Submit">
+            </form>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
