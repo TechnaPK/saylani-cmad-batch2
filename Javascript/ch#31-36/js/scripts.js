@@ -79,7 +79,7 @@ button3.onclick = function () {
 
     var daysDiff = msDiff / (1000 * 60 * 60 * 24);
 
-    result.innerHTML = Math.floor( daysDiff ) + " days have been passed since you born";
+    result.innerHTML = "Your next birth day is '" + Math.floor( daysDiff ) + "' days away";
 
     tellTime();
 
