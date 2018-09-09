@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <h1>JavaScript Chapters 49</h1>
+    <h1>Reading field values</h1>
+    <hr>
+
+    <h2>Demo</h2>
+    <div id="buttons">
+        <form onSubmit="checkAddress();">
+            Email:
+            <input type="text" id="email_field">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <h2>Output</h2>
+    <div id="result"></div>
+
+    <script>
+        function checkAddress() {
+
+            event.preventDefault();
+
+            var email = email_field.value;
+            // var email = document.getElementById('email_field').value;
+
+            if ( email === "" ) {
+                alert("Email address required.");
+            }else{
+                result.innerHTML = email
+            }
+
+        }
+
+
+    </script>
+</body>
+
+</html>

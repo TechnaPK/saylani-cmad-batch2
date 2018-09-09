@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style></style>
+
+</head>
+
+<body>
+    <h1>JavaScript Chapters 53-54</h1>
+    <h1>Swapping images and Setting Classes</h1>
+    <hr>
+
+    <h2>Demo</h2>
+    <div id="result">
+        <img src="images/apple.jpg" onMouseover="src='images/mango.jpg'" onMouseout="src='images/apple.jpg'">
+        
+        <!-- <img id="myImage" src="images/apple.jpg" onMouseover="swapPicture(id, 'images/mango.jpg');" onMouseout="swapPicture(id, 'images/apple.jpg');">
+        <img id="myImage2" src="images/mango.jpg" onMouseover="swapPicture(id, 'images/apple.jpg');" onMouseout="swapPicture(id, 'images/mango.jpg');"> -->
+    
+    </div>
+
+    <script>
+
+        function swapPicture(elementId, newPic) {
+            document.getElementById(elementId).src = newPic;
+        }
+        
+    </script>
+</body>
+
+</html>

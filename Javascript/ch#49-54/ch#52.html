@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+    .hidden{
+        display: none;
+    }
+
+    .title{
+        color: blue;
+    }
+
+    .big{
+        font-size: 3em;
+    }
+    </style>
+
+</head>
+
+<body>
+    <h1>JavaScript Chapters 52</h1>
+    <h1>Manipulating images and text</h1>
+    <hr>
+
+    <h2>Demo</h2>
+    <div id="result">
+        <h2 onClick="makeBig();" class="title" id="title">This is an Apple</h2>
+        <img src="images/apple.jpg" class="apple" id="apple" onClick="makeInvisible();">
+    </div>
+
+    <script>
+        function makeInvisible() {
+            document.getElementById("apple").className = "hidden";
+        }
+
+        function makeBig() {
+            document.getElementById("title").className = "big";
+        }
+        
+    </script>
+</body>
+
+</html>

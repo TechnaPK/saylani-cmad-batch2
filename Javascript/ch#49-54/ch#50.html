@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <h1>JavaScript Chapters 50</h1>
+    <h1>Setting field values</h1>
+    <hr>
+
+    <h2>Demo</h2>
+    <div id="buttons">
+        <form>
+            ZIP:<br>
+            <input type="text" id="zip" onBlur="fillCity();"><br>
+            City:<br>
+            <input type="text" id="city">
+        </form>
+    </div>
+
+    <script>
+        function fillCity() {
+
+            var cityName;
+            var zipEntered = document.getElementById("zip").value;
+            switch (zipEntered) {
+                case "38000":
+                    cityName = "Faisalabad";
+                    break;
+                case "40000":
+                    cityName = "Lahore";
+                    break;
+                case "50000":
+                    cityName = "Karachi";
+
+            }
+
+            document.getElementById("city").value = cityName;
+
+        }
+
+    </script>
+</body>
+
+</html>
