@@ -1,0 +1,55 @@
+body{
+    background: #ececec;
+    margin: 0;
+    padding: 0;
+}
+div{
+    box-sizing: border-box;
+}
+.container{
+    width: 980px;
+    margin: 0 auto;
+}
+#header{
+    height: 70px;
+    line-height: 70px;
+    background: purple;
+    color: white;
+    text-align: right;
+    padding: 0 20px;
+
+}
+
+#leftPane, #rightPane{
+    border: 2px solid #ccc;
+    min-height: 50px;
+    padding: 20px;
+}
+
+#leftPane{
+    width: 65%;
+    float: left;
+    line-height: 25px;
+}
+
+#rightPane{
+    width: 30%;
+    float: right;
+}
+
+button{
+    width: 100%;
+    padding: 8px 0;
+    margin: 10px 0;
+}
+p.success, p.error{
+    color: white;
+    padding: 20px;
+}
+p.success{
+    background: green;
+    
+}
+p.error{
+    background: red;
+}
