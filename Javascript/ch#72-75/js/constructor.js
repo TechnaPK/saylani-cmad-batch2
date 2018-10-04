@@ -19,3 +19,13 @@ Plan.prototype.calcAnnual = function () {
 var plan1 = new Plan("Basic", 3.99, 10)
 var plan2 = new Plan("Professional", 5.99, 50)
 var plan3 = new Plan("Ultimate", 9.99, 500)
+
+
+
+//List of Properties
+// var listOfProperties = [];
+// for (var prop in plan1) {
+//     listOfProperties.push(prop);
+// }
+
+// console.log( listOfProperties )
