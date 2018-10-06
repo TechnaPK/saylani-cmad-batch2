@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <h1>JavaScript Chapters 76-81</h1>
+    <h1>Form Validation - Try, Catch and Throw</h1>
+    <hr>
+
+    <h2>Form 1: Text Field</h2>
+    <div>
+        <form action="submit.html" onSubmit="return checkForLastName();">
+            Please enter your last name.<br>
+            <input type="text" id="lastNameField">
+            <input type="submit" value="Submit Form">
+        </form>
+    </div>
+
+    <h2>Form 2: Drop Down</h2>
+    <div>
+        <form action="submit.html" onSubmit="return checkForSelection();">
+            <select id="states">
+                <option value="" selected="selected">
+                    SELECT A STATE</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+            </select>&nbsp;&nbsp;
+            <input type="submit" value="Submit Form">
+        </form>
+
+    </div>
+
+    <h2>Form 3: Radio Button</h2>
+    <div>
+        <form action="submit.html" onSubmit="return validateRadios();">
+            Select your pet.<br>
+            <input type="radio" name="r1" value="Cat"> Cat<br>
+            <input type="radio" name="r1" value="Dog"> Dog<br>
+            <input type="radio" name="r1" value="Hen"> Hen<br>
+            <input type="submit" value="Submit Form">
+        </form>
+    </div>
+
+    <h2>Form 4: Email Field</h2>
+    <div>
+        <form action="submit.html" onSubmit="return validateEmail();">
+            Please enter your email.<br>
+            <input type="email" id="email" required>
+            <input type="submit" value="Submit Form">
+        </form>
+    </div>
+
+    <h2>Form 5: Password Field</h2>
+    <div>
+        <form action="submit.html" onSubmit="return checkPassword();">
+            Enter a password<br>
+            (8-12 characters, at least 1 number, no spaces)<br>
+            <input type="text" id="pass1">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
