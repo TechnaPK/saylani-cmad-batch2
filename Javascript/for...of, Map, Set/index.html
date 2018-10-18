@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <h1>for...of, Map and Set</h1>
+    <hr>
+
+    <div>
+        <h2>Map</h2>
+        <p>Map is a collection of keyed data items, just like an Object. But the main difference is that Map allows keys of any type.</p>
+
+        <p>The main methods are:</p>
+
+        <ul>
+            <li><code>new Map()</code> – creates the map.</li>
+            <li><code>map.set(key, value)</code> – stores the value by the key.</li>
+            <li><code>map.get(key)</code> – returns the value by the key, <code>undefined</code> if <code>key</code> doesn’t exist in map.</li>
+            <li><code>map.has(key)</code> – returns <code>true</code> if the <code>key</code> exists, <code>false</code> otherwise.</li>
+            <li><code>map.delete(key)</code> – removes the value by the key.</li>
+            <li><code>map.clear()</code> – clears the map</li>
+            <li><code>map.size</code> – returns the current element count.</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Set</h2>
+        <p>A Set is a collection of values, where each value may occur only once.</p>
+
+        <p>The main methods are:</p>
+
+        <ul>
+            <li><code>new Set(iterable)</code> – creates the set, optionally from an array of values (any iterable will do).</li>
+            <li><code>set.add(value)</code> – adds a value, returns the set itself.</li>
+            <li><code>set.delete(value)</code> – removes the value, returns <code>true</code> if <code>value</code> existed at the moment of the call, otherwise <code>false</code>.</li>
+            <li><code>set.has(value)</code> – returns <code>true</code> if the value exists in the set, otherwise <code>false</code>.</li>
+            <li><code>set.clear()</code> – removes everything from the set.</li>
+            <li><code>set.size</code> – is the elements count.</li>
+            </ul>
+    </div>
+
+    <script src="js/for-of.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/set.js"></script>
+</body>
+
+</html>
